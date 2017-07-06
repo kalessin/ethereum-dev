@@ -1,0 +1,25 @@
+{
+  "clients": {
+    "Geth": {
+      "version": "1.6.6-unstable",
+      "platforms": {
+        "linux": {
+          "x64": {
+            "bin": "geth",
+            "commands": {
+              "sanity": {
+                "args": [
+                  "version"
+                ],
+                "output": [
+                  "Geth",
+                  "1.6.6-unstable"
+                ]
+              }
+            }
+          },
+        }
+      }
+    }
+  }
+}
