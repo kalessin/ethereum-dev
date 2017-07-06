@@ -13,6 +13,10 @@ Build
     docker build -t kalessin/ethereum-dev .
 
 
+or::
+
+    docker pull kalessin/ethereum-dev:latest
+
 Run
 ===
 
