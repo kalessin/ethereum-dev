@@ -61,5 +61,7 @@ For private chain alternative::
            -v $XSOCK:$XSOCK:rw -v $XAUTH:$XAUTH:rw -e DISPLAY -e XAUTHORITY=${XAUTH} -ti -p 30303:30303 kalessin/ethereum-dev /bin/bash
 
 
-Finally (if you will run Mist for first time for the given blockchain), once inside the container console, copy the file clientBinaries.json into the container Mist
-folder. This file indicates the installed version of geth, in order to avoid Mist to try to download a new one by itself.
+Finally (before running Mist for first time in the new container), once in the container console, copy the file clientBinaries.json into
+``/root/.config/Mist/`` folder (if you are using same convention as instruction above). This file indicates the installed version of geth, in order to avoid
+Mist to try to download a new one by itself. If you built your own image instead of pulling it, your geth version may differ from the one set in that configuration file,
+so you may need to edit it.
